@@ -1,0 +1,519 @@
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Overpass', sans-serif;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/  
+*{
+    margin: 0;
+    padding: 0;
+}
+.body_index{
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "maini maini maini"
+        "footer footer footer";
+}
+.main__index{
+    grid-area: maini;
+}
+header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    height: 110px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 80px;
+    align-items: center;
+}
+
+.barraNav__lista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.barraNav__lista li{
+    text-decoration: none;
+    list-style: none;
+}
+.barraNav__lista a{
+    color:#003e55;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.carrousel{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.carrousel__div img{
+    height: 200px;
+    margin: 20px 5px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+}
+
+.card__item{
+    border: solid 1px black;
+    background-color: #fec72faa;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card__item a{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    color: #003e55 ;
+    font-size: 20px;
+}
+.card__item img{
+    height: 70px;
+}
+
+.quienesSomos{
+    height: 350px;
+    background-color: grey;
+    background-image: url(./Imagenes/fondoqs.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 20px 200px;
+}
+
+.quienesSomos h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding: 20px;
+}
+
+.quienesSomos p{
+    color: black;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+}
+
+.contacto{
+    background-color: #003e55;
+    color: beige;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    height: fit-content;
+    text-align: center;
+    padding: 20px;
+}
+.contacto h3{
+    font-size: 32px;
+}
+.contacto h4{
+    font-size: 16px;
+}
+.contacto__form div{
+    padding: 10px;
+}
+.contacto__form input{
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+}
+.contacto__form textarea{
+    width: 620px;
+    border-radius: 5px;
+    resize: none;
+}
+.contacto__form__button{
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+.footer{
+    grid-area: footer;
+    background-color: whitesmoke;
+    height: fit-content;
+}
+.footer__sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer__sec__ssn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__sec__ssn img{
+    width: 300px;
+}
+.footer__sec__ssn h4{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: lighter;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 20px;
+}
+.footer__sec__redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer__sec__redes a{
+    margin-right: 50px;
+}
+.footer__sec__redes img{
+    height: 50px;
+}
+
+.agro{
+    height: 400px;
+    background-color: grey;
+    background-image: url(./Imagenes/agro.jpg);
+    background-size: cover;
+}
+.imagen__h2{
+    color: #fec82f;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.432)
+}
+.imagen__h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: rgba(245, 245, 220, 0.418);
+}
+.titulo__linea{
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    background-color: #003e55;
+    text-align: center;
+    padding: 5px;
+}
+.productos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.productos__1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex: wrap;
+}
+.productos__1 p{
+    font-size: 16px;
+}
+.productos__1 div{
+    padding: 10px;
+}
+.productos__2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: left;
+    flex: wrap;
+}
+.productos__2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.productos__2 div{
+    padding: 10px;
+}
+
+.cedasaba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+}
+.cedasaba h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+.cedasaba img{
+    height: 100px;
+    margin-left: 15px;
+}
+
+.boton__cotizacion{
+    width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    border: solid 2px black;
+    padding: 10px 20px;
+    margin: 30px;
+    position: relative;
+    left: 37%;
+}
+.boton__cotizacion a{
+    color: #003e55;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.empresa{
+    height: 400px;
+    background-color: grey;
+    background-image: url(./Imagenes/paratuempresa.jpg);
+    background-size: cover;
+}
+.persona{
+    height: 400px;
+    background-color: grey;
+    background-image: url(./Imagenes/paravos.jpg);
+    background-size: cover;
+}
+
+.body__audi{
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "maina maina maina" 
+        "footer footer footer";
+}
+.main__audi{
+    grid-area: maina;
+}
+.auditoria{
+    grid-area: auditoria;
+    height: 400px;
+    background-color: grey;
+    background-image: url(./Imagenes/relevamiento.jpg);
+    background-size: cover;
+}
+.auditoria__text{
+    display: grid;
+    grid-template-areas: 
+        "info info aviso";
+    align-items: center;
+    justify-items: center;
+    margin-right: 20px;
+}
+.auditoria__info{
+    grid-area: info;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    margin: 0px 50px;
+}
+.auditoria__aviso{
+    grid-area: aviso;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    height: fit-content;
+    font-weight: bolder;
+    border:solid 3px #003e55;
+    text-align: center;
+}
+
+.cotizacion{
+    height: 400px;
+    background-color: grey;
+    background-image: url(./Imagenes/cotizacion.jpg);
+    background-size: cover;  
+}
+.cotizacion__form{
+    color: beige;
+    background-color: #003e55;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+.cotizacion__form div{
+    padding: 5px;
+}
+.cotizacion__form input{
+    width: 300px;
+    padding: 5px;
+}
+.cotizacion__form__text{
+    width: 600px;
+    height: 200px;
+    border-radius: 5px;
+    resize:none;
+}
+.cotizacion__form__button{
+    cursor: pointer; 
+    width: 100px; 
+}
+
+.productores{
+    height: 400px;
+    background-color: grey;
+    background-image: url(./Imagenes/productores.jpg);
+    background-size: cover;  
+}
+.productores__formulario{
+    color: beige;
+    background-color: #003e55;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+.productores__formulario div{
+    padding: 10px;
+}
+.productores__formulario input{
+    width: 300px;
+    height: 20px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .body_index{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "maini"
+            "footer";
+    }
+
+    .barraNav__lista a{
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+     .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        align-items: center;
+        justify-items: center;
+    }
+    .card__item{
+        border: solid 1px black;
+        background-color: #fec72faa;
+        text-align: center;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .quienesSomos{
+        text-align: justify;
+        padding: 20px 50px;
+    }
+    .quienesSomos h2{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .contacto__form input{
+        width: 200px;
+    }
+    .contacto__form textarea{
+        width: 350px;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .footer__sec__ssn img{
+        width: 200px;
+    }
+    .footer__sec__redes img{
+        height: 30px;
+    }
+    .footer__sec__ssn h4{
+        font-size: 12px;
+        position: relative;
+        bottom: 15px;
+    }
+    .footer__sec__redes a{
+        margin-right: 15px;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+        align-items: justify;
+    }
+    .agro{
+        height: 300px;
+    }
+    .persona{
+        height: 300px;
+    }
+    .empresa{
+        height: 300px;
+    }
+    .boton__cotizacion{
+        position: relative;
+        left: 20%;
+    }
+    .cotizacion{
+        height: 300px;
+    }
+    .productores{
+        height: 300px;
+    }
+
+    .auditoria{
+        height: 300px;
+    }
+    .auditoria__text{
+        display: grid;
+        grid-template-areas: 
+            "info"
+            "aviso";
+        align-items: center;
+        justify-items: center;
+    }
+    .auditoria__info{
+        grid-area: info;
+        font-size: 16px;
+    }
+    .auditoria__aviso{
+        grid-area: aviso;
+        font-size: 16px;
+    }
+
+}
