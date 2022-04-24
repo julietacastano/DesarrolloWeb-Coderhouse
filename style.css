@@ -308,7 +308,7 @@ header{
 }
 
 .boton__cotizacion:hover{
-    background-color: #fec82f;
+    background-image: linear-gradient(#fec72fe0, #fec72f85);
 }
 
 .empresa{
