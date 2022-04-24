@@ -96,6 +96,11 @@ header{
 .card__item img{
     height: 70px;
 }
+.card__item a:hover{
+    transform: scale(1.2);
+    color: #01668b;
+}
+
 
 .quienesSomos{
     height: 350px;
@@ -293,12 +298,17 @@ header{
     margin: 30px;
     position: relative;
     left: 37%;
+    transition: all 0.5s;
 }
 .boton__cotizacion a{
     color: #003e55;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 3px;
+}
+
+.boton__cotizacion:hover{
+    background-color: #fec82f;
 }
 
 .empresa{
