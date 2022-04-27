@@ -4,96 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&family=Overpass:wght@100;200&family=PT+Sans+Caption:wght@400;700&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <title>Para vos</title>
     <link rel="shortcut icon" href="../Imagenes/Logo3.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../Imagenes/Logo1.png" alt="Logo de Liderseg" class="logo"></a>
-        <nav class="barraNav">
-            <ul class="barraNav__lista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Para vos</a></li>
-                <li><a href="./para-tu-empesa.html">Para tu empresa</a></li>
-                <li><a href="./agroindustria.html">Agroindustria</a></li>
-                <li><a href="./auditoria-de-riesgo.html">Auditoría de riesgo</a></li>
-                <li><a href="./pedi-tu-cotizacion.html">Pedí tu cotización</a></li>
-                <li><a href="./productores.html">Productores</a></li>  
-                <li> <a href="../index.html#contacto">Contacto</a></li> 
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../Imagenes/Logo1.png" alt="Logo de Liderseg" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Para vos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./para-tu-empesa.html">Para tu empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./agroindustria.html">Agroindustria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="./pedi-tu-cotizacion.html">Pedí tu cotización</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="./productores.html">Productores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="./auditoria-de-riesgo.html">Auditoria de riesgo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="../index.html#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="persona">
+      <h2 class="imagen__h2">Para vos</h2>   
+      <h4 class="imagen__h4">Proteje lo que mas queres</h4>
+    </section>
+    <section class="titulo__linea">  <h4>PRODUCTOS QUE COMERCIALIZAMOS</h4></section>
+    <section class="accordion accordion-flush row" id="accordionFlushExample">
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Automotores
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Al momento de seleccionar una cobertura, necesitas el mejor asesoramiento para que tu auto esté protegido. Te ayudamos a elegir entre diferentes coberturas para tu auto: Seguro obligatorios, terceros completos, todo riesgo, 0km y Alta Gama.</div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Hogar
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Tu casa es un bien muy importante para vos y tu familia. Podes asegurar tu casa, departamento o vivienda en country, para poder disfrutar y no arriesgar tu patrimonio ante cualquier imprevisto. Te ofrecemos distintos planes con diferentes niveles de cobertura, según la protección que estás buscando:
+            <ul>
+              <li>Incendio de edificio y contenido</li>
+              <li>Eventos de la naturaleza (daños causados por huracán, vendaval, ciclón y tornado)</li>
+              <li>Robo contenido</li>
+              <li>Electrodomésticos</li>
+              <li>Robo de electrónicos en la República Argentina</li>
+              <li>Bicicletas</li>
+              <li>Responsabilidad civil</li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accidentes personales
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Un seguro que te protege mientras trabajas. Ante una situación adversa, podes obtener capital, que podrá alivianar las consecuencias del daño. Con el seguro de accidentes personales podes estar cubierto las 24 horas, en horario laboral e initinere por:
+            <ul>
+              <li>Fallecimiento.</li>
+              <li>Invalidez total y/o parcial permanente.</li>
+              <li>Gastos médicos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Seguro de vida
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Sabemos que hay hechos que no pueden controlarse, pero cuando se trata de la familia siempre buscamos la mayor tranquilidad posible. Un seguro de vida te brinda soluciones que te darán la tranquilidad de saber que vos y tus seres queridos se encuentran protegidos frente a situaciones inesperadas.
+            <br>Beneficio extra: Podes deducir los pagos mensuales de ganancias
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            Vida con ahorro
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Un seguro de vida con ahorro que se adapta a tu estilo de vida. Elegí las coberturas y las sumas aseguradas que necesitas para que vos y tu familia puedan hacerles frente a situaciones impredecibles, mientras generas un ahorro con los pagos del seguro. Se puede contratar en pesos o en dólares.</div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            Consorcio
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Los seguros para consorcios cubren las partes comunes de los mismos para evitar gastos extras en expensas. Se adaptan a las características particulares de cada edificio cubriéndolo por incendio, robo o hurto y responsabilidad civil, entre otros.</div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            Embarcaciones de placer
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Se protegen embarcaciones de uso particular y de placer para cada necesidad. Aseguramos lanchas, veleros, y botes neumáticos con beneficio de asistencia y remolque. </div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+            ART personal comestico
+          </button>
+        </h2>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">El empleador tiene la obligación de contratar una Aseguradora de Riesgos del Trabajo (ART) para la trabajadora. La ART brinda cobertura médica ante un accidente en el trabajo, en el camino o en caso de sufrir una enfermedad profesional.</div>
+        </div>
+      </div>
+      <div class="accordion-item col-lg-6 col-sm-12">
+        <h2 class="accordion-header" id="flush-headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+            Praxis medica
+          </button>
+        </h2>
+        <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Es una cobertura orientada a proteger a los profesionales de la salud ante reclamos de terceros fundados en errores, fallas o negligencias en actos médicos cometidos durante el desempeño de su actividad.</div>
+        </div>
+      </div>
+    </section>
+    <section class="boton__cotizacion">
+      <a href="./pedi-tu-cotizacion.html">PEDÍ TU COTIZACIÓN</a>
+    </section> 
+  </main>
 
-    <main>
-        <section class="persona">
-            <h2 class="imagen__h2">Para vos</h2>   
-            <h4 class="imagen__h4">Proteje lo que mas queres</h4>
-        </section>
-        <section class="titulo__linea">  <h4>PRODUCTOS QUE COMERCIALIZAMOS</h4></section>
-        <section class="productos">  
-            <section class="productos__1">
-                <div>
-                    <h5>Automotores</h5>
-                    <p>Descripcion autos</p>
-                </div>
-                <div>
-                    <h5>Hogar</h5>
-                    <p>Descripcion hogar</p>
-                </div>
-                <div>
-                    <h5>Accidentes personales</h5>
-                    <p>Descripcion AP</p>
-                </div>
-                <div>
-                    <h5>Vida</h5>
-                    <p>Descripcion vida</p>
-                </div>
-                <div>
-                    <h5>Vida con ahorro</h5>
-                    <p>Descripcion ahorro</p>
-                </div>    
-            </section>
-            <section class="productos__2">
-                <div>
-                    <h5>Consorcio</h5>
-                    <p>Descripcion consorcio</p>
-                </div>    
-                <div>
-                    <h5>Embarcaciones de placer</h5>
-                    <p>Descripcion embarcaciones</p>
-                </div>    
-                <div>
-                    <h5>ART personal comestico</h5>
-                    <p>Descripcion ART</p>
-                </div>    
-                <div>
-                    <h5>Praxis medica</h5>
-                    <p>Descripcion praxis medica</p>
-                </div>    
-            </section>
-        </section>
-        <section class="boton__cotizacion">
-            <a href="./pedi-tu-cotizacion.html">PEDÍ TU COTIZACIÓN</a>
-        </section>
-    
-    </main>
-
-    <footer class="footer">
-        <section class="footer__sec">
-            <div class="footer__sec__ssn">
-                <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="../Imagenes/LogoSSN.png" alt="Logo ssn"></a>
-                <h4>Persona fisica - Matricula: 45296</h4>
-            </div>
-            <div class="footer__sec__redes">
-                <a href="https://www.linkedin.com/company/liderseg-srl/" target="_blank"><img src="../Imagenes/linkedin.png" alt="Logo de linkedin"></a>
-                <a href="https://www.instagram.com/lidersegar/" target="_blank"> <img src="../Imagenes/instagram.png" alt="Logo de instagram"></a>
-                <a href="../index.html#contacto"><img src="../Imagenes/correo.png" alt="Icono de correo electrónico"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img src="../Imagenes/whatsapp.png" alt="Icono de Whatsapp"></a>
-            </div> 
-        </section>     
-    </footer>
-    
+  <footer class="footer">
+    <section class="footer__sec">
+      <div class="footer__sec__ssn">
+        <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="../Imagenes/LogoSSN.png" alt="Logo ssn"></a>
+        <h4>Persona fisica - Matricula: 45296</h4>
+      </div>
+      <div class="footer__sec__redes">
+        <a href="https://www.linkedin.com/company/liderseg-srl/" target="_blank"><img src="../Imagenes/linkedin.png" alt="Logo de linkedin"></a>
+        <a href="https://www.instagram.com/lidersegar/" target="_blank"> <img src="../Imagenes/instagram.png" alt="Logo de instagram"></a>
+        <a href="../index.html#contacto"><img src="../Imagenes/correo.png" alt="Icono de correo electrónico"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../Imagenes/whatsapp.png" alt="Icono de Whatsapp"></a>
+      </div> 
+    </section>     
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>     
 </body>
 </html>
