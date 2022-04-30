@@ -1,0 +1,16 @@
+.auditoria{
+    height: 400px;
+    background-color: $color-fondo-imagenes;
+    background-image: url(./Imagenes/relevamiento.jpg);
+    background-size: cover;
+
+    &__text{
+        margin: 20px;
+        font-family: $font-texto;
+        font-size: 20px;
+    }
+    &__aviso{
+        font-weight: bolder;
+        border:solid 3px $color-principal;    
+    }
+}

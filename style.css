@@ -273,10 +273,17 @@ font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
-    .quienesSomos h2{
-        font-size: 20px;
-        padding: 5px;
+    .quienesSomos{
+        background-color: grey;
+        background-position: center;
+        background-size: cover;
+        padding: 20px 100px;
     }
+    .quienesSomos h2{
+        padding: 5px;
+        margin-top: 40px;
+    }
+
     .footer__sec__ssn img{
         width: 200px;
     }
