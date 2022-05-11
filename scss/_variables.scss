@@ -1,0 +1,37 @@
+$colores:(
+    principal: #003e55,
+    secundario: #fec82f,
+    fondo: whitesmoke,
+    fondo-imagenes: grey,
+);
+
+$fonts:(
+    titulo: 'Bebas Neue',
+    texto: 'Open Sans', 
+);
+
+$tamanio-tipografia:(
+    titulo: 24px,
+    subtitulo: 20px,
+    parrafo: 16px,
+);
+
+%text-center{
+    font-family: map-get($fonts, texto);
+    text-align: center;
+    padding: 10px;  
+};
+
+@mixin flexbox ($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: $justify ;
+};
+
+@mixin banners ($url) {
+    height: 400px;
+    background-color: map-get($colores, fondo-imagenes);
+    background-image: $url;
+    background-size: cover;
+};

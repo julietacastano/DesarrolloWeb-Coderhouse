@@ -1,0 +1,24 @@
+.agro{
+    @include banners (url(../../Imagenes/agro.jpg));
+
+}
+
+.cedasaba{
+    @include flexbox (row, center);
+    flex: wrap;
+    margin: 15px;
+    h4{
+        font-family: map-get($fonts, titulo);
+        font-weight: lighter;
+        letter-spacing: 5px;
+    }
+    img{
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .agro{
+        height: 300px;
+    }
+}

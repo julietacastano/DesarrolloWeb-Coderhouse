@@ -4,7 +4,7 @@
 }
 
 .header{
-    background-color: $color-white;
+    background-color: map-get($colores, fondo);
 }
 
 .logo{
@@ -12,42 +12,111 @@
 }
 
 .nav-link{
-    font-family: $font-titulos;
+    font-family: map-get($fonts, titulo);
 }
 
 .footer{
-    background-color: $color-white;
+    background-color: map-get($colores, fondo);
     height: fit-content;
+    &__sec{
+        @include flexbox (row, space-evenly);
+        flex-wrap: wrap;
+        &__ssn{
+            @include flexbox (column, center);
+            img{
+                width: 300px;
+            }
+            h6{
+                font-family: map-get($fonts, texto);                
+            }
+        } 
+        &__redes{
+            @include flexbox (row, space-evenly);
+            a{
+                margin: 10px 50px 10px 0px;
+            }
+            img{
+                height: 50px;
+            }
+        }       
+    }
 }
-.footer__sec{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+.imagen{
+    &__h2{
+        color: map-get($colores, secundario);
+        font-family: map-get($fonts, titulo);
+        letter-spacing: 5px;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.432)
+    }
+    &__h4{
+        font-family: map-get($fonts, titulo);
+        font-weight: lighter;
+        letter-spacing: 3px;
+        text-align: center;
+        background-color: rgba(245, 245, 220, 0.418);
+        padding: 5px;        
+    }
 }
-.footer__sec__ssn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.titulo{
+    &__linea{
+        height: auto;
+        margin: 10px 0px 10px 0px;
+        background-color: map-get($colores, principal);
+        h4{
+            font-family: map-get($fonts, texto);
+            text-align: center;
+            padding: 5px;
+            color: map-get($colores, fondo);
+            font-size: map-get($tamanio-tipografia, titulo);  
+        } 
+    }
 }
-.footer__sec__ssn img{
-    width: 300px;
+.accordion-button{
+    font-family: map-get($fonts, texto);
+    font-size: map-get($tamanio-tipografia, subtitulo);
 }
-.footer__sec__ssn h4{
-    font-family: $font-texto;
-    font-size: 16px;
-    margin-bottom: 20px;
+.accordion-body{
+    font-family: map-get($fonts, texto);
+    font-size: map-get($tamanio-tipografia, parrafo);
+}
+
+.boton__cotizacion{
+    width: fit-content;
+    background-color: white;
+    border: solid 2px black;
+    padding: 10px 20px;
+    margin: 30px;
     position: relative;
-    bottom: 20px;
+    left: 35%;
+    transition: all 0.5s;
+    a{
+        font-family: map-get($fonts, texto);
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    :hover{
+        background-image: linear-gradient(#00659fa1,#00659fc1);
+    }
+
 }
-.footer__sec__redes{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.footer__sec__redes a{
-    margin-right: 50px;
-}
-.footer__sec__redes img{
-    height: 50px;
+
+@media only screen and (max-width: 768px){
+    .footer__sec__ssn img{
+        width: 250px;
+    }
+
+    .footer__sec__redes a{
+        margin-right: 15px;
+    }
+    .boton__cotizacion{
+        position: relative;
+        left: 20%;
+    }
 }

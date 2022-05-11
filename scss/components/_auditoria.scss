@@ -1,16 +1,21 @@
 .auditoria{
-    height: 400px;
-    background-color: $color-fondo-imagenes;
-    background-image: url(./Imagenes/relevamiento.jpg);
-    background-size: cover;
+    @include banners (url(/Imagenes/relevamiento.jpg));
 
     &__text{
         margin: 20px;
-        font-family: $font-texto;
-        font-size: 20px;
+        font-family: map-get($fonts,texto);
+        font-size: map-get($tamanio-tipografia, subtitulo);
     }
     &__aviso{
         font-weight: bolder;
-        border:solid 3px $color-principal;    
+        border:solid 3px map-get($colores, principal);    
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .auditoria{
+        height: 300px;
     }
 }

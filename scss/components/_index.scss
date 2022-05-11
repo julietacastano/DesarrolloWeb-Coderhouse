@@ -1,0 +1,86 @@
+@import '../variables';
+
+.carousel-item{
+    height: 400px;
+    img{
+        height: 400px;
+    }
+}
+
+.card__item{
+    border: solid 1px black;
+    background-color: #fec72f58;
+    height: 250px;
+    @include flexbox (column, center);
+    a{
+        font-family: map-get($fonts, titulo);
+        text-decoration: none;
+        color: map-get($colores, principal);
+        font-size: map-get($tamanio-tipografia, subtitulo);
+    }
+    img{
+      height: 70px;  
+    }
+}
+.card__item a:hover{
+    transform: scale(1.2);
+}
+
+.quienesSomos{
+    height: auto;
+    background-color: map-get($colores, fondo);
+    background-image: url(../Imagenes/fondoqs.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 30px 200px;
+    h2{
+        @extend %text-center;
+    }
+    p{
+        @extend %text-center;
+        font-weight: bold;
+
+    }
+}
+
+.formulario{
+    background-color: map-get($colores, principal);
+    color: map-get($colores, fondo);
+    font-family: map-get($fonts, texto);
+    font-weight: lighter;
+    height: fit-content;
+    text-align: center;
+    padding: 20px;
+}
+.form{
+    &__item{
+        padding: 10px;
+        textarea{
+            resize: none;
+        }
+        &__button{
+            background-color: map-get($colores, fondo);
+            border-radius: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .carousel-item{
+        height: 250px;
+        img{
+            height: 250px;
+        }
+    }
+
+    .quienesSomos{
+        background-size: cover;
+        padding: 20px;
+        h2{
+             padding: 5px;
+             margin-top: 40px;
+        }
+    }
+
+}

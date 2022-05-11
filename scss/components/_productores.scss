@@ -1,0 +1,9 @@
+.productores{
+    @include banners (url(/Imagenes/productores.jpg));
+}
+
+@media only screen and (max-width: 768px){
+    .productores{
+        height: 300px;
+    }
+}

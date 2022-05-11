@@ -1,3 +1,8 @@
+.quienesSomos h2, .quienesSomos p {
+  font-family: "Open Sans";
+  text-align: center;
+  padding: 10px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -9,53 +14,247 @@
   height: 80px; }
 
 .nav-link {
-  font-family: "Bebas Neue", cursive; }
+  font-family: "Bebas Neue"; }
 
 .footer {
   background-color: whitesmoke;
   height: fit-content; }
+  .footer__sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .footer__sec__ssn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .footer__sec__ssn img {
+        width: 300px; }
+      .footer__sec__ssn h6 {
+        font-family: "Open Sans"; }
+    .footer__sec__redes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly; }
+      .footer__sec__redes a {
+        margin: 10px 50px 10px 0px; }
+      .footer__sec__redes img {
+        height: 50px; }
 
-.footer__sec {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
+.imagen__h2 {
+  color: #fec82f;
+  font-family: "Bebas Neue";
+  letter-spacing: 5px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.432); }
 
-.footer__sec__ssn {
+.imagen__h4 {
+  font-family: "Bebas Neue";
+  font-weight: lighter;
+  letter-spacing: 3px;
+  text-align: center;
+  background-color: rgba(245, 245, 220, 0.418);
+  padding: 5px; }
+
+.titulo__linea {
+  height: auto;
+  margin: 10px 0px 10px 0px;
+  background-color: #003e55; }
+  .titulo__linea h4 {
+    font-family: "Open Sans";
+    text-align: center;
+    padding: 5px;
+    color: whitesmoke;
+    font-size: 24px; }
+
+.accordion-button {
+  font-family: "Open Sans";
+  font-size: 20px; }
+
+.accordion-body {
+  font-family: "Open Sans";
+  font-size: 16px; }
+
+.boton__cotizacion {
+  width: fit-content;
+  background-color: white;
+  border: solid 2px black;
+  padding: 10px 20px;
+  margin: 30px;
+  position: relative;
+  left: 35%;
+  transition: all 0.5s; }
+  .boton__cotizacion a {
+    font-family: "Open Sans";
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 3px; }
+  .boton__cotizacion :hover {
+    background-image: linear-gradient(#00659fa1, #00659fc1); }
+
+@media only screen and (max-width: 768px) {
+  .footer__sec__ssn img {
+    width: 250px; }
+  .footer__sec__redes a {
+    margin-right: 15px; }
+  .boton__cotizacion {
+    position: relative;
+    left: 20%; } }
+
+.quienesSomos h2, .quienesSomos p {
+  font-family: "Open Sans";
+  text-align: center;
+  padding: 10px; }
+
+.carousel-item {
+  height: 400px; }
+  .carousel-item img {
+    height: 400px; }
+
+.card__item {
+  border: solid 1px black;
+  background-color: #fec72f58;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-
-.footer__sec__ssn img {
-  width: 300px; }
-
-.footer__sec__ssn h4 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  margin-bottom: 20px;
-  position: relative;
-  bottom: 20px; }
-
-.footer__sec__redes {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 30px; }
+  justify-content: center; }
+  .card__item a {
+    font-family: "Bebas Neue";
+    text-decoration: none;
+    color: #003e55;
+    font-size: 20px; }
+  .card__item img {
+    height: 70px; }
 
-.footer__sec__redes a {
-  margin-right: 50px; }
+.card__item a:hover {
+  transform: scale(1.2); }
 
-.footer__sec__redes img {
-  height: 50px; }
+.quienesSomos {
+  height: auto;
+  background-color: whitesmoke;
+  background-image: url(../Imagenes/fondoqs.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 30px 200px; }
+  .quienesSomos p {
+    font-weight: bold; }
+
+.formulario {
+  background-color: #003e55;
+  color: whitesmoke;
+  font-family: "Open Sans";
+  font-weight: lighter;
+  height: fit-content;
+  text-align: center;
+  padding: 20px; }
+
+.form__item {
+  padding: 10px; }
+  .form__item textarea {
+    resize: none; }
+  .form__item__button {
+    background-color: whitesmoke;
+    border-radius: 5px; }
+
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: 250px; }
+    .carousel-item img {
+      height: 250px; }
+  .quienesSomos {
+    background-size: cover;
+    padding: 20px; }
+    .quienesSomos h2 {
+      padding: 5px;
+      margin-top: 40px; } }
+
+.agro {
+  height: 400px;
+  background-color: grey;
+  background-image: url(../../Imagenes/agro.jpg);
+  background-size: cover; }
+
+.cedasaba {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: wrap;
+  margin: 15px; }
+  .cedasaba h4 {
+    font-family: "Bebas Neue";
+    font-weight: lighter;
+    letter-spacing: 5px; }
+  .cedasaba img {
+    height: 100px; }
+
+@media only screen and (max-width: 768px) {
+  .agro {
+    height: 300px; } }
 
 .auditoria {
   height: 400px;
   background-color: grey;
-  background-image: url(./Imagenes/relevamiento.jpg);
+  background-image: url(/Imagenes/relevamiento.jpg);
   background-size: cover; }
   .auditoria__text {
     margin: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans";
     font-size: 20px; }
   .auditoria__aviso {
     font-weight: bolder;
-    border: solid 3px #003e55; }
+    border: solid 3px #003e55;
+    padding: 10px;
+    text-align: center; }
+
+@media only screen and (max-width: 768px) {
+  .auditoria {
+    height: 300px; } }
+
+.empresa {
+  height: 400px;
+  background-color: grey;
+  background-image: url(/Imagenes/paratuempresa.jpg);
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .empresa {
+    height: 300px; } }
+
+.persona {
+  height: 400px;
+  background-color: grey;
+  background-image: url(/Imagenes/paravos.jpg);
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .persona {
+    height: 300px; } }
+
+.cotizacion {
+  height: 400px;
+  background-color: grey;
+  background-image: url(/Imagenes/cotizacion.jpg);
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .cotizacion {
+    height: 300px; } }
+
+.productores {
+  height: 400px;
+  background-color: grey;
+  background-image: url(/Imagenes/productores.jpg);
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .productores {
+    height: 300px; } }
