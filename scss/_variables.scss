@@ -16,22 +16,9 @@ $tamanio-tipografia:(
     parrafo: 16px,
 );
 
-%text-center{
-    font-family: map-get($fonts, texto);
-    text-align: center;
-    padding: 10px;  
-};
-
 @mixin flexbox ($direction, $justify) {
     display: flex;
     flex-direction: $direction;
     align-items: center;
     justify-content: $justify ;
-};
-
-@mixin banners ($url) {
-    height: 400px;
-    background-color: map-get($colores, fondo-imagenes);
-    background-image: $url;
-    background-size: cover;
 };

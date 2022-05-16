@@ -42,7 +42,17 @@
     }
 }
 
+.banner{
+    position: relative;
+    &__img{
+        position: relative;
+        height: 400px;
+    }
+}
 .imagen{
+    &__texto{
+        position: absolute;
+    }
     &__h2{
         color: map-get($colores, secundario);
         font-family: map-get($fonts, titulo);
@@ -108,6 +118,12 @@
 }
 
 @media only screen and (max-width: 768px){
+    .banner{
+        &__img{
+            height: 300px;
+        }
+    }
+   
     .footer__sec__ssn img{
         width: 250px;
     }

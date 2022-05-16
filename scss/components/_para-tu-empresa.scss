@@ -1,9 +1,0 @@
-.empresa{
-    @include banners (url(/Imagenes/paratuempresa.jpg));
-}
-
-@media only screen and (max-width: 768px){
-    .empresa{
-        height: 300px;
-    }
-}

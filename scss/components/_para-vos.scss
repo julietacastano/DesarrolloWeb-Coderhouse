@@ -1,9 +1,0 @@
-.persona{
-    @include banners (url(/Imagenes/paravos.jpg));
-}
-
-@media only screen and (max-width: 768px){
-    .persona{
-        height: 300px;
-    }
-}

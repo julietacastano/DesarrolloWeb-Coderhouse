@@ -1,8 +1,3 @@
-.quienesSomos h2, .quienesSomos p {
-  font-family: "Open Sans";
-  text-align: center;
-  padding: 10px; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -43,6 +38,15 @@
         margin: 10px 50px 10px 0px; }
       .footer__sec__redes img {
         height: 50px; }
+
+.banner {
+  position: relative; }
+  .banner__img {
+    position: relative;
+    height: 400px; }
+
+.imagen__texto {
+  position: absolute; }
 
 .imagen__h2 {
   color: #fec82f;
@@ -99,6 +103,8 @@
     background-image: linear-gradient(#00659fa1, #00659fc1); }
 
 @media only screen and (max-width: 768px) {
+  .banner__img {
+    height: 300px; }
   .footer__sec__ssn img {
     width: 250px; }
   .footer__sec__redes a {
@@ -106,11 +112,6 @@
   .boton__cotizacion {
     position: relative;
     left: 0%; } }
-
-.quienesSomos h2, .quienesSomos p {
-  font-family: "Open Sans";
-  text-align: center;
-  padding: 10px; }
 
 .carousel-item {
   height: 400px; }
@@ -137,11 +138,9 @@
   transform: scale(1.2); }
 
 .quienesSomos {
-  height: auto;
+  height: fit-content;
   background-color: whitesmoke;
-  background-image: url("../Imagenes/fondoqs.jpg");
-  background-position: center;
-  background-size: cover;
+  font-family: "Open Sans";
   text-align: center;
   padding: 30px 200px; }
   .quienesSomos p {
@@ -170,17 +169,7 @@
     .carousel-item img {
       height: 250px; }
   .quienesSomos {
-    background-size: cover;
-    padding: 20px; }
-    .quienesSomos h2 {
-      padding: 5px;
-      margin-top: 40px; } }
-
-.agro {
-  height: 400px;
-  background-color: grey;
-  background-image: url(../../Imagenes/agro.jpg);
-  background-size: cover; }
+    padding: 20px; } }
 
 .cedasaba {
   display: flex;
@@ -196,65 +185,13 @@
   .cedasaba img {
     height: 100px; }
 
-@media only screen and (max-width: 768px) {
-  .agro {
-    height: 300px; } }
+.auditoria__text {
+  margin: 20px;
+  font-family: "Open Sans";
+  font-size: 20px; }
 
-.auditoria {
-  height: 400px;
-  background-color: grey;
-  background-image: url(/Imagenes/relevamiento.jpg);
-  background-size: cover; }
-  .auditoria__text {
-    margin: 20px;
-    font-family: "Open Sans";
-    font-size: 20px; }
-  .auditoria__aviso {
-    font-weight: bolder;
-    border: solid 3px #003e55;
-    padding: 10px;
-    text-align: center; }
-
-@media only screen and (max-width: 768px) {
-  .auditoria {
-    height: 300px; } }
-
-.empresa {
-  height: 400px;
-  background-color: grey;
-  background-image: url(/Imagenes/paratuempresa.jpg);
-  background-size: cover; }
-
-@media only screen and (max-width: 768px) {
-  .empresa {
-    height: 300px; } }
-
-.persona {
-  height: 400px;
-  background-color: grey;
-  background-image: url(/Imagenes/paravos.jpg);
-  background-size: cover; }
-
-@media only screen and (max-width: 768px) {
-  .persona {
-    height: 300px; } }
-
-.cotizacion {
-  height: 400px;
-  background-color: grey;
-  background-image: url(/Imagenes/cotizacion.jpg);
-  background-size: cover; }
-
-@media only screen and (max-width: 768px) {
-  .cotizacion {
-    height: 300px; } }
-
-.productores {
-  height: 400px;
-  background-color: grey;
-  background-image: url(/Imagenes/productores.jpg);
-  background-size: cover; }
-
-@media only screen and (max-width: 768px) {
-  .productores {
-    height: 300px; } }
+.auditoria__aviso {
+  font-weight: bolder;
+  border: solid 3px #003e55;
+  padding: 10px;
+  text-align: center; }

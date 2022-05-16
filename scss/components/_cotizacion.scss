@@ -1,9 +1,0 @@
-.cotizacion{
-    @include banners (url(/Imagenes/cotizacion.jpg));
-}
-
-@media only screen and (max-width: 768px){
-    .cotizacion{
-        height: 300px;
-    }
-}

@@ -1,8 +1,3 @@
-.agro{
-    @include banners (url(../../Imagenes/agro.jpg));
-
-}
-
 .cedasaba{
     @include flexbox (row, center);
     flex: wrap;
@@ -17,8 +12,4 @@
     }
 }
 
-@media only screen and (max-width: 768px){
-    .agro{
-        height: 300px;
-    }
-}
+

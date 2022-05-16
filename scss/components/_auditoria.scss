@@ -1,6 +1,4 @@
 .auditoria{
-    @include banners (url(/Imagenes/relevamiento.jpg));
-
     &__text{
         margin: 20px;
         font-family: map-get($fonts,texto);
@@ -14,8 +12,3 @@
     }
 }
 
-@media only screen and (max-width: 768px){
-    .auditoria{
-        height: 300px;
-    }
-}
