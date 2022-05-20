@@ -39,32 +39,21 @@
       .footer__sec__redes img {
         height: 50px; }
 
-.banner {
-  position: relative; }
-  .banner__img {
-    position: relative;
-    height: 400px; }
-
-.imagen__texto {
-  position: absolute; }
-
 .imagen__h2 {
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 5px;
   color: #fec82f;
   font-family: "Bebas Neue";
-  letter-spacing: 5px;
-  font-weight: lighter;
-  text-align: center;
   margin-bottom: 20px;
-  padding: 20px;
   background-color: rgba(0, 0, 0, 0.432); }
 
 .imagen__h4 {
-  font-family: "Bebas Neue";
-  font-weight: lighter;
-  letter-spacing: 3px;
   text-align: center;
-  background-color: rgba(245, 245, 220, 0.418);
-  padding: 5px; }
+  padding: 5px;
+  letter-spacing: 3px;
+  font-family: "Bebas Neue";
+  background-color: rgba(245, 245, 220, 0.418); }
 
 .titulo__linea {
   height: auto;
@@ -74,6 +63,7 @@
     font-family: "Open Sans";
     text-align: center;
     padding: 5px;
+    letter-spacing: 0px;
     color: whitesmoke;
     font-size: 24px; }
 
@@ -92,19 +82,17 @@
   padding: 10px 20px;
   margin: 30px;
   position: relative;
-  left: 35%;
-  transition: all 0.5s; }
+  left: 35%; }
   .boton__cotizacion a {
     font-family: "Open Sans";
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 3px; }
-  .boton__cotizacion :hover {
-    background-image: linear-gradient(#00659fa1, #00659fc1); }
+
+.boton__cotizacion a:hover {
+  color: red; }
 
 @media only screen and (max-width: 768px) {
-  .banner__img {
-    height: 300px; }
   .footer__sec__ssn img {
     width: 250px; }
   .footer__sec__redes a {
@@ -142,7 +130,8 @@
   background-color: whitesmoke;
   font-family: "Open Sans";
   text-align: center;
-  padding: 30px 200px; }
+  padding: 30px 200px;
+  letter-spacing: 0px; }
   .quienesSomos p {
     font-weight: bold; }
 
@@ -150,10 +139,10 @@
   background-color: #003e55;
   color: whitesmoke;
   font-family: "Open Sans";
-  font-weight: lighter;
   height: fit-content;
   text-align: center;
-  padding: 20px; }
+  padding: 20px;
+  letter-spacing: 0px; }
 
 .form__item {
   padding: 10px; }
@@ -176,14 +165,21 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex: wrap;
   margin: 15px; }
   .cedasaba h4 {
     font-family: "Bebas Neue";
-    font-weight: lighter;
     letter-spacing: 5px; }
   .cedasaba img {
     height: 100px; }
+
+.banner__agro {
+  background-image: url("../Imagenes/agro.jpg");
+  height: 400px;
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .banner__agro {
+    height: 300px; } }
 
 .auditoria__text {
   margin: 20px;
@@ -193,5 +189,51 @@
 .auditoria__aviso {
   font-weight: bolder;
   border: solid 3px #003e55;
+  text-align: center;
   padding: 10px;
-  text-align: center; }
+  letter-spacing: 0px; }
+
+.banner__auditoria {
+  background-image: url("../Imagenes/relevamiento.jpg");
+  height: 400px;
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .banner__auditoria {
+    height: 300px; } }
+
+.banner__empresa {
+  background-image: url("../Imagenes/paratuempresa.jpg");
+  height: 400px;
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .banner__empresa {
+    height: 300px; } }
+
+.banner__vos {
+  background-image: url("../Imagenes/paravos.jpg");
+  height: 400px;
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .banner__vos {
+    height: 300px; } }
+
+.banner__cotizacion {
+  background-image: url("../Imagenes/cotizacion.jpg");
+  height: 400px;
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .banner__cotizacion {
+    height: 300px; } }
+
+.banner__productores {
+  background-image: url("../Imagenes/productores.jpg");
+  height: 400px;
+  background-size: cover; }
+
+@media only screen and (max-width: 768px) {
+  .banner__productores {
+    height: 300px; } }

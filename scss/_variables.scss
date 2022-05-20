@@ -22,3 +22,16 @@ $tamanio-tipografia:(
     align-items: center;
     justify-content: $justify ;
 };
+
+@mixin banner ($url) {
+    background-image: $url;
+    height: 400px;
+    background-size: cover;
+    
+}
+
+@mixin textCenter ($padding, $letterSpace) {
+    text-align: center;
+    padding: $padding;
+    letter-spacing: $letterSpace;
+}

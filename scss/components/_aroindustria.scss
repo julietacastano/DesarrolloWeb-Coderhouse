@@ -1,10 +1,8 @@
 .cedasaba{
     @include flexbox (row, center);
-    flex: wrap;
     margin: 15px;
     h4{
         font-family: map-get($fonts, titulo);
-        font-weight: lighter;
         letter-spacing: 5px;
     }
     img{
@@ -12,4 +10,11 @@
     }
 }
 
-
+.banner__agro{
+    @include banner (url("../Imagenes/agro.jpg"));
+}
+@media only screen and (max-width: 768px){
+    .banner__agro{
+        height: 300px;
+    }
+}   

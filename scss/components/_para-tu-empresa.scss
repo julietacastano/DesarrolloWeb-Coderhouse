@@ -1,0 +1,8 @@
+.banner__empresa{
+    @include banner (url("../Imagenes/paratuempresa.jpg"));
+}
+@media only screen and (max-width: 768px){
+    .banner__empresa{
+        height: 300px;
+    }
+}   

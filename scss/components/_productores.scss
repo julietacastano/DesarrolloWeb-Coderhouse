@@ -1,0 +1,8 @@
+.banner__productores{
+    @include banner (url("../Imagenes/productores.jpg"));
+}
+@media only screen and (max-width: 768px){
+    .banner__productores{
+        height: 300px;
+    }
+}   

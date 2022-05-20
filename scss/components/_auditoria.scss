@@ -6,9 +6,17 @@
     }
     &__aviso{
         font-weight: bolder;
-        border:solid 3px map-get($colores, principal);    
-        padding: 10px;
-        text-align: center;
+        border:solid 3px map-get($colores, principal);   
+        @include textCenter (10px, 0px);
     }
 }
+
+.banner__auditoria{
+    @include banner (url("../Imagenes/relevamiento.jpg"));
+}
+@media only screen and (max-width: 768px){
+    .banner__auditoria{
+        height: 300px;
+    }
+}  
 
