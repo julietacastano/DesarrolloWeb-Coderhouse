@@ -51,6 +51,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./paginas/gracias.html">gracias</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -58,38 +61,11 @@
   </header>
 
   <main>
-    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./Imagenes/fondo1.jpg" class="d-block w-100" alt="Imagen de fondo">
-        </div>
-        <div class="carousel-item">
-          <img src="./Imagenes/fondo2.jpg" class="d-block w-100" alt="Imagen de fondo">
-        </div>
-        <div class="carousel-item">
-          <img src="./Imagenes/fondo3.jpg" class="d-block w-100" alt="Imagen de fondo">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </section>     
-
     <section class="container-fluid">
       <div class="row align-items-center justify-items-center">
         <div class="col-lg-3 col-sm-6 card__item"> 
           <img src="./Imagenes/barn.png" alt="Icono de un granero">
-           <a href="./paginas/agroindustria.html">Agroindustria</a>
+          <a href="./paginas/agroindustria.html">Agroindustria</a>
         </div>
         <div class="col-lg-3 col-sm-6 card__item">
           <img src="./Imagenes/casa.png" alt="Icono de una casa">
@@ -115,26 +91,28 @@
     <section class="formulario" id="contacto">
       <h3>Estamos para ayudarte</h3>
       <h5>Dejanos saber si tenes alguna duda o si necesitas mas información</h5>
-      <form class="row justify-content-center">
+      <form class="row justify-content-center" id="form" action="">
         <div class="form__item col-lg-5 col-sm-10">
-          <input type="text" class="form-control" placeholder="Nombre" required>
+          <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
         </div>
         <div class="form__item col-lg-5 col-sm-10">
-          <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+          <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" name="apellido">
+          <label></label>
         </div>
         <div class="form__item col-lg-5 col-sm-10">
-          <input type="tel" class="form-control" placeholder="Telefono">
+          <input type="tel" class="form-control" placeholder="Telefono" name="tel">
         </div>
         <div class="form__item col-lg-5 col-sm-10">
-          <input type="email" class="form-control" placeholder="Email" required>
+          <input type="email" class="form-control" placeholder="Email" name="email" required>
         </div>
         <div class="form__item col-lg-10 col-sm-10 mx-auto">
-          <textarea cols="30" rows="10" class="form-control" placeholder="Mensaje" required></textarea>                
+          <textarea cols="30" rows="10" class="form-control" placeholder="Mensaje" name="mensaje" required></textarea>                
         </div>
         <div class="form__item__button col-3 mx-auto">
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn btn-light">Enviar</button>
         </div>
       </form>
+      <a href="mailto:info@liderseg.com.ar" id="mail"></a>
     </section>
   </main>
 
@@ -152,6 +130,19 @@
       </div> 
     </section>     
   </footer>
+  <script>
+    const formulario = document.getElementById('form');
+    const buttonMail = document.getElementById('mail')
+
+    function handleSubmit(e){
+      e.preventDefault()
+      const form = new FormData(this)
+      buttonMail.setAttribute('href',`mailto:info@liderseg.com.ar?subject=Mensaje Web de ${form.get('nombre')}${form.get('apellido')}&body=Email: ${form.get('email')}, Telefono de contacto: ${form.get('tel')}, Mail de contacto: ${form.get('mail')}, Mensaje:${form.get('mensaje')}`)
+      buttonMail.click()
+      location.reload();
+    }
+    form.addEventListener('submit',handleSubmit)
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

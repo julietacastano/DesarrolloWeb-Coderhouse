@@ -17,7 +17,7 @@
         font-size: map-get($tamanio-tipografia, subtitulo);
     }
     img{
-      height: 70px;  
+        height: 70px;  
     }
 }
 .card__item a:hover{
@@ -49,8 +49,8 @@
             resize: none;
         }
         &__button{
-            background-color: map-get($colores, fondo);
             border-radius: 5px;
+            padding: 5px;
         }
     }
 }

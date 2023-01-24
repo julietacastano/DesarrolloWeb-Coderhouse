@@ -51,7 +51,7 @@
 .imagen__h4 {
   text-align: center;
   padding: 5px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-family: "Bebas Neue";
   background-color: rgba(245, 245, 220, 0.418); }
 
@@ -149,8 +149,8 @@
   .form__item textarea {
     resize: none; }
   .form__item__button {
-    background-color: whitesmoke;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 5px; }
 
 @media only screen and (max-width: 768px) {
   .carousel-item {
@@ -229,6 +229,11 @@
   .banner__cotizacion {
     height: 300px; } }
 
+.aclaracion {
+  color: #fec82f;
+  text-align: left;
+  margin: 0px; }
+
 .banner__productores {
   background-image: url("../Imagenes/productores.jpg");
   height: 400px;
@@ -237,3 +242,18 @@
 @media only screen and (max-width: 768px) {
   .banner__productores {
     height: 300px; } }
+
+.gracias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px; }
+  .gracias h3 {
+    font-family: "Bebas Neue";
+    letter-spacing: 5px;
+    color: #003e55; }
+  .gracias a {
+    text-decoration: none;
+    color: #fec82f;
+    font-size: 20px; }

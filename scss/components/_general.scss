@@ -52,9 +52,9 @@
         background-color: rgba(0, 0, 0, 0.432)
     }
     &__h4{
-        @include textCenter (5px, 3px);
+        @include textCenter (5px, 2px);
         font-family: map-get($fonts, titulo);
-        background-color: rgba(245, 245, 220, 0.418);    
+        background-color: rgba(245, 245, 220, 0.418);
     }
 }
 
@@ -100,8 +100,7 @@
     color: red;
 }
 
-@media only screen and (max-width: 768px){
-   
+@media only screen and (max-width: 768px){ 
     .footer__sec__ssn img{
         width: 250px;
     }

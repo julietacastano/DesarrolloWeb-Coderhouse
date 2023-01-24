@@ -58,32 +58,33 @@
     <section class="titulo__linea"><h4>FORMULARIO DE CONTACTO</h4></section>
     <section class="formulario">
       <h5>Completa el formulario y nos ponemos en contacto con vos</h5>
-      <form class="row justify-content-center">
+      <form class="row justify-content-center" id="formProd"  action="" >
         <div class="form__item col-lg-5 col-sm-10">
-          <input type="text" class="form-control" placeholder="Nombre y Apellido" required>
+          <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre" required>
         </div>
         <div class="form__item col-lg-3 col-sm-5">
-          <input type="text" class="form-control"  placeholder="CUIT">
+          <input type="text" class="form-control" name="cuit" placeholder="CUIT">
         </div>
         <div class="form__item col-lg-2 col-sm-5">
-          <input type="number" class="form-control" placeholder="Matricula" required>
+          <input type="number" class="form-control" placeholder="Matricula" name="matricula" required>
         </div>
         <div class="form__item col-lg-3 col-sm-10">
-          <input type="tel" class="form-control" placeholder="Telefono">
+          <input type="tel" class="form-control" placeholder="Telefono" name="tel">
         </div>
         <div class="form__item col-lg-4 col-sm-10">
-          <input type="email" class="form-control" placeholder="Email" required>
+          <input type="email" class="form-control" placeholder="Email" name="email" required>
         </div>
         <div class="form__item col-lg-3 col-sm-10">
-          <input type="text" class="form-control" placeholder="Localidad" required>
+          <input type="text" class="form-control" placeholder="Localidad" name="local" required>
         </div>
         <div class="form__item col-lg-10 col-sm-10 mx-auto">
-          <textarea cols="30" rows="10" class="form-control" placeholder="Mensaje" required></textarea>                
+          <textarea cols="30" rows="10" class="form-control" placeholder="Mensaje" name="mensaje" required></textarea>                
         </div>
         <div class="form__item__button col-3 mx-auto">
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn btn-light">Enviar</button>
         </div>
       </form>
+      <a href="mailto:info@liderseg.com.ar" id="mailProd"></a>
     </section>
   </main>
 
@@ -101,6 +102,19 @@
       </div> 
     </section>     
   </footer>
+  <script>
+    const formulario = document.getElementById('formProd');
+    const buttonMail = document.getElementById('mailProd')
+
+    function handleSubmit(e){
+      e.preventDefault()
+      const form = new FormData(this)
+      buttonMail.setAttribute('href',`mailto:info@liderseg.com.ar?subject=Mensaje Web de ${form.get('nombre')} - ${form.get('cuit')} - Matricula:${form.get('matricula')}&body=Localidad: ${form.get('local')}, Telefono de contacto: ${form.get('tel')}, Mail de contacto: ${form.get('mail')} Mensaje:${form.get('mensaje')}`)
+      buttonMail.click()
+      location.reload();
+    }
+    form.addEventListener('submit',handleSubmit)
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
